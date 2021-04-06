@@ -1,0 +1,56 @@
+LINUX COMMANDS:13.232.80.63
+
+1.pwd(present working directory):display the current working directory of the terminl.
+2.echo :this is like linux version of print
+3.sudo :to add or delete user or group of users.(sudo useradd username, sudo userdel username)
+4.clear :clear the screen.
+5.cd (change directory):change of directory.
+6.ls :list of files.
+   ls -l :lists the files and permissions.
+7.cat :shows the content in the text file.(ex cat abc.txt)
+  cat -b :add line numbers to the non added lines.(it doesn't add to blank lines)
+  cat -n :add number to blank lines also.
+  cat -s :used to as blank lines in single lines.
+  cst -E :it shows the dollar symbol at the end of the line.
+8.less:shows the content in thetext file but in different window.
+9.grep :search for a particular string or a word in text file.(grep word filename)
+10.sort :sorts the files and directories by alphabetical or numerical (ex:sort filename)
+   sort -r:sorts in reverse order
+   sort -f:case insensitive order.
+   sort -n:sorts in numerical order.
+
+11.mv :moves the files from one directoryto another directory (ex:mv or (sudo mv) abc.txt  destination)
+12.cp: used to copy files or directories but it still available in working directory (ex: cp abc.txt destination name)
+13.rm: removes files from a directory once removed the contents of the files cannot be recovered.(ex:rm or sudo rm abe.txt)
+   rm -r :used to remove even the non empty directories.
+   rm -p :removs the non empty directories including the parent and su directories. 
+14.mkdir : creates new directory.(ex:mkdir /home/manju/)
+15.rmdir: removes directory(only empty directory)
+16.chmod :to change the access permissions of files and directories.(chmod 777 filename)
+
+     chmod:user group others filename
+
+        0=0=nothing
+	1=1=execute(x)
+	2=2=write(w)
+	3=2+1=w+x
+	4=4=read(r)
+	5=4+1=r+x
+	6=4+2=(r+w)
+	7=4+2+1(r+w+x)
+
+LINUX COMMANDS FOR DEVOPS:
+
+1.man : it is used to know the details of any command (ex:man ls)
+2.whoami: to know the current user.
+3.su or sudo bash: swith to the root user.
+4.touch or sudo touch : is used to create any file in your system.(sudo touch abc.txt)
+5.vi or sudo vi: is used editing text in files.
+  if you want to inerst then press i. to save this file press esc:w(write)q(quit).
+6.chown : change the owner and group of the file.(ex:chown root abc.txt)
+7.lsof : list of open files and details of file and user.
+  lsof -u directory: used for the files opened in the particular directory.
+8.id :used to know the username and userid
+ id -u, id -g
+9.tar :used to zip or unzip file of the .tar format.(ex: tar -cvf filename source folder for zip)(unzip -xvf tar filename).
+10.
